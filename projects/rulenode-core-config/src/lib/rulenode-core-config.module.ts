@@ -10,6 +10,7 @@ import { RuleNodeCoreConfigActionModule } from './components/action/rulenode-cor
 import { RuleNodeCoreConfigFilterModule } from './components/filter/rulenode-core-config-filter.module';
 import { RulenodeCoreConfigEnrichmentModule } from './components/enrichment/rulenode-core-config-enrichment.module';
 import { RulenodeCoreConfigTransformModule } from './components/transform/rulenode-core-config-transform.module';
+import { NDURuleNodeCoreConfigActionModule } from './components/ndu/ndu-rulenode-core-config-action.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RulenodeCoreConfigTransformModule } from './components/transform/ruleno
     RuleNodeCoreConfigFilterModule,
     RulenodeCoreConfigEnrichmentModule,
     RulenodeCoreConfigTransformModule,
-    EmptyConfigComponent
+    EmptyConfigComponent,
+    NDURuleNodeCoreConfigActionModule
   ]
 })
 export class RuleNodeCoreConfigModule {

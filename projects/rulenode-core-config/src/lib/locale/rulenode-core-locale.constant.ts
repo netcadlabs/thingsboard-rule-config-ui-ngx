@@ -431,7 +431,7 @@ export default function addRuleNodeCoreLocaleEnglish(translate: TranslateService
           'fcm-customer-user-hint': "A selected customer user will be notified",
           'fcm-other-properties': 'Other data properties',
           'fcm-other-properties-hint': 'You can add custom key values to notification data',
-          'fcm-add-metadata': 'Add metada to notification data'
+          'fcm-add-metadata': 'Add metada to notification data',
         },
         'key-val': {
           key: 'Key',
@@ -439,6 +439,15 @@ export default function addRuleNodeCoreLocaleEnglish(translate: TranslateService
           'remove-entry': 'Remove entry',
           'add-entry': 'Add entry'
         }
+      },
+      ndu: {
+          rulenode: {
+              'status-type': 'Status Type',
+              'status-alarm': 'Alarm',
+              'status-error': 'Error',
+              'status-active': 'Active',
+              'status-inactive': 'Inactive'
+          }
       }
     };
     translate.setTranslation('en_US', enUS, true);
