@@ -13,10 +13,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class EntityStatusUpdaterConfigComponent extends RuleNodeConfigurationComponent {
 
-  customerEntityType: EntityType = EntityType.CUSTOMER;
+  entityType: EntityType = EntityType.ENTITY_STATUS;
 
   statusUpdaterConfigForm: FormGroup;
-
 
   constructor(protected store: Store<AppState>,
     private fb: FormBuilder) {
@@ -33,7 +32,7 @@ export class EntityStatusUpdaterConfigComponent extends RuleNodeConfigurationCom
 
   protected onConfigurationSet(configuration: RuleNodeConfiguration) {
     this.statusUpdaterConfigForm = this.fb.group({
-      targetStatus: [configuration ? configuration.targetStatus : 'ALARM', [Validators.required]],
+      targetStatus: [configuration ? configuration.targetStatus : null, [Validators.required]],
     });
 
   }
