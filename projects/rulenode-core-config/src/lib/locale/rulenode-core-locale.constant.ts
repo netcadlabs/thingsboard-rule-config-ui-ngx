@@ -441,13 +441,14 @@ export default function addRuleNodeCoreLocaleEnglish(translate: TranslateService
         }
       },
       ndu: {
-          rulenode: {
-              'status-type': 'Status Type',
-              'status-alarm': 'Alarm',
-              'status-error': 'Error',
-              'status-active': 'Active',
-              'status-inactive': 'Inactive'
-          }
+        rulenode: {
+          'status-type': 'Status Type',
+          'status-alarm': 'Alarm',
+          'status-error': 'Error',
+          'status-active': 'Active',
+          'status-inactive': 'Inactive',
+          'entity-status-updateder-desc': 'Use this node to update entity statuses.',
+        }
       }
     };
     translate.setTranslation('en_US', enUS, true);

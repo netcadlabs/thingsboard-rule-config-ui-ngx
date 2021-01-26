@@ -1,11 +1,14 @@
 <section [formGroup]="statusUpdaterConfigForm" fxLayout="column">
   <mat-form-field class="mat-block">
     <mat-label translate>ndu.rulenode.status-type</mat-label>
-    <mat-select formControlName="targetType" required>
+    <!-- <mat-select formControlName="targetStatus" required>
       <mat-option value="ALARM">{{'ndu.rulenode.status-alarm' | translate}}</mat-option>
       <mat-option value="ERROR">{{'ndu.rulenode.status-error' | translate}}</mat-option>
       <mat-option value="INACTIVE">{{'ndu.rulenode.status-inactive' | translate}}</mat-option>
       <mat-option value="ACTIVE">{{'ndu.rulenode.status-active' | translate}}</mat-option>
-    </mat-select>
+    </mat-select> -->
+    <tb-entity-autocomplete required [excludeEntityIds]="[ruleChainId]" [entityType]="entityType.ENTITY_STATUS"
+      formControlName="targetStatus">
+    </tb-entity-autocomplete>
   </mat-form-field>
 </section>

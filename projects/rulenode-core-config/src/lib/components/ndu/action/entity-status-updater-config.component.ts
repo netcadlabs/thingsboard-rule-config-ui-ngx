@@ -33,7 +33,7 @@ export class EntityStatusUpdaterConfigComponent extends RuleNodeConfigurationCom
 
   protected onConfigurationSet(configuration: RuleNodeConfiguration) {
     this.statusUpdaterConfigForm = this.fb.group({
-      targetType: [configuration ? configuration.targetType : 'ALARM', [Validators.required]],
+      targetStatus: [configuration ? configuration.targetStatus : 'ALARM', [Validators.required]],
     });
 
   }

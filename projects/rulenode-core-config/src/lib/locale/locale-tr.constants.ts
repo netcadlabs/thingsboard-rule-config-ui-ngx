@@ -433,15 +433,16 @@ export const trTR = {
         value: 'Değer',
         'remove-entry': 'Kaydı kaldır',
         'add-entry': 'Kayıt ekle'
-      },
-      ndu: {
-        rulenode: {
-            'status-type': 'Durum Tipi',
-            'status-alarm': 'Alarm',
-            'status-error': 'Hata',
-            'status-active': 'Aktif',
-            'status-inactive': 'Pasif (Default)'
-        }
-    }
+      }
+    },
+    ndu: {
+      rulenode: {
+        'status-type': 'Durum Tipi',
+        'status-alarm': 'Alarm',
+        'status-error': 'Hata',
+        'status-active': 'Aktif',
+        'status-inactive': 'Pasif (Default)',
+        'entity-status-updateder-desc': 'Öğelerin durumlarını güncellemek için kullanılır.',
+      }
     }
   };
